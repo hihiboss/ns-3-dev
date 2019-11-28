@@ -1,0 +1,29 @@
+router
+
+#name   city    latitude  longitude
+c1      KO      50        30
+c2      KO    	30        30
+c3      KO    	10        30
+c4      KO    	10        40
+n1      KO    	40        40
+n12     JP    	30        60
+n2      NA    	40        80
+p1      NA    	50        90
+p2      NA    	30        90
+p3      NA    	10        90
+p4      NA    	10        80
+
+link
+
+#x      y       capacity(kbps)  OSPF    Delay   MaxPackets
+c1      n1      10Mbps          1       50ms    200
+c2      n1      10Mbps          1       10ms    200
+c3      n1      10Mbps          1       100ms   200
+c4      n1      10Mbps          1       1ms     200
+n1      n2      1Mbps           1200    15ms    20 
+n1      n12     1Mbps           600     10ms    20
+n12     n2      1Mbps           800     5ms     20
+n2      p1      10Mbps          100     1ms     200
+n2      p2      10Mbps          200     1ms     200
+n2      p3      10Mbps          300     1ms     200
+n2      p4      10Mbps          400     1ms     200
